@@ -151,6 +151,7 @@ nav {
   min-width: 205px;
   width: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 50;
 }
 
 .dropdown-content a {
@@ -276,6 +277,7 @@ section {
 .pets .animal .animal-content #slideshow {
   position: relative;
   height: 315px;
+  overflow: hidden;
 }
 .pets .animal .animal-content #slideshow > div {
   position: absolute;
@@ -292,6 +294,7 @@ section {
 .pets .animal .animal-content #slideshow2 {
   position: relative;
   height: 315px;
+  overflow: hidden;
 }
 .pets .animal .animal-content #slideshow2 > div {
   position: absolute;
@@ -308,6 +311,7 @@ section {
 .pets .animal .animal-content #slideshow3 {
   position: relative;
   height: 315px;
+  overflow: hidden;
 }
 .pets .animal .animal-content #slideshow3 > div {
   position: absolute;
@@ -324,6 +328,7 @@ section {
 .pets .animal .animal-content #slideshow4 {
   position: relative;
   height: 315px;
+  overflow: hidden;
 }
 .pets .animal .animal-content #slideshow4 > div {
   position: absolute;
@@ -1225,7 +1230,7 @@ section {
 @media screen and (max-width: 480px) {
   /* Hero */
   .hero-container img {
-    width: 50%;
+    width: 20%;
   }
 
   #hero {
@@ -1303,7 +1308,6 @@ section {
   }
   .pets .row .animal-content .animal-info h4 {
     font-size: 18px;
-    margin-top: -60px;
   }
 
   .cta {
@@ -1347,8 +1351,35 @@ section {
   }
 
   .rassen .row {
-    display: flex;
+    display: block;
     justify-content: center;
+    padding: 0 30px;
+  }
+
+  .rassen .overlay .column-1 {
+    float: none;
+    width: 150%;
+    text-align: center;
+  }
+  .rassen .overlay .column-1 p {
+    font-size: 12px;
+  }
+  .rassen .overlay .column-2 {
+    float: none;
+    width: 150%;
+  }
+  .rassen .overlay h3 {
+    font-size: 18px;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .rassen .overlay ul {
+    margin: auto;
+    width: 100%;
+  }
+  .rassen .overlay ul li {
+    font-size: 14px;
   }
 
   .services .row {
@@ -1366,6 +1397,19 @@ section {
   }
   .services .icon-box .description {
     font-size: 13px;
+  }
+
+  .services .overlay .icon-box .row {
+    display: block;
+    margin: 20px -50px 0;
+  }
+  .services .overlay .icon-box .row .circle-box {
+    height: 200px;
+    width: 200px;
+  }
+  .services .overlay .icon-box .row .circle-box img {
+    width: 200px;
+    height: 200px;
   }
 
   .blog .row {
@@ -1502,6 +1546,201 @@ section {
     text-align: left;
   }
 }
+@media screen and (max-width: 1024px) {
+  /* Hero */
+  .hero-container img {
+    width: 60%;
+  }
+
+  #hero {
+    background: url("../img/hero-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+
+  #hero-dogs {
+    background: url("../img/dogs-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+
+  #hero-cats {
+    background: url("../img/cats-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+
+  #hero-rodents {
+    background: url("../img/rodents-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+
+  #hero-birds {
+    background: url("../img/birds-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+
+  /* End Hero */
+  /* Section */
+  section {
+    padding: 60px 40px;
+  }
+
+  .section-title h2 {
+    padding-bottom: 10px;
+  }
+
+  .title-line {
+    width: 40px;
+    margin-bottom: 20px;
+  }
+
+  /* End Section */
+  .pets .row {
+    padding: 0;
+  }
+  .pets .row .animal {
+    margin-bottom: 40px;
+    width: 48%;
+  }
+  .pets .row .animal .animal-content #slideshow {
+    height: 400px;
+  }
+  .pets .row .animal .animal-content #slideshow2 {
+    height: 400px;
+  }
+  .pets .row .animal .animal-content #slideshow3 {
+    height: 400px;
+  }
+  .pets .row .animal .animal-content #slideshow4 {
+    height: 400px;
+  }
+
+  .cta {
+    background: url(../img/tablet-bg.jpg);
+    background-size: 80%;
+    padding: 0;
+  }
+  .cta .cta-content {
+    padding: 60px 80px;
+  }
+
+  .adopteer .row .animal {
+    margin: 20px 0;
+    width: 48%;
+  }
+
+  .adopteer .second-row .animal {
+    margin-bottom: 20px;
+    width: 48%;
+  }
+
+  .rassen .row {
+    padding: 0 40px;
+  }
+
+  .rassen .overlay {
+    width: 70%;
+  }
+  .rassen .overlay .column-2 {
+    width: 50%;
+    margin-left: 50px;
+  }
+
+  .services .icon-box {
+    width: 340px;
+  }
+
+  .services .overlay .icon-box .row {
+    margin: 20px 0;
+  }
+  .services .overlay .icon-box .row .circle-box {
+    height: 190px;
+    width: 190px;
+  }
+  .services .overlay .icon-box .row .circle-box img {
+    width: 190px;
+    height: 190px;
+  }
+
+  .blog .row {
+    display: block;
+    padding: 0 60px;
+  }
+
+  .blog .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .blog .column .blog-item {
+    margin-bottom: 60px;
+  }
+  .blog .column .blog-item .blog-img {
+    height: 460px;
+  }
+  .blog .column .blog-item .blog-info {
+    height: 100px;
+  }
+  .blog .column .blog-item .blog-info h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .blog .column .blog-item .blog-info p {
+    font-size: 20px;
+  }
+  .blog .column .blog-item .blog-info .details-link {
+    font-size: 22px;
+    top: 60px;
+  }
+
+  .about .row {
+    display: block;
+    padding: 0 50px;
+  }
+
+  .about .column {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .about .our-values .card {
+    margin: auto;
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+  .contact .contact-form {
+    width: 82%;
+    padding: 0 60px;
+  }
+  .contact .contact-form .row {
+    display: block;
+  }
+  .contact .contact-form .form-control-1 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contact .contact-form .form-control-2 {
+    width: 100%;
+  }
+  .contact .contact-form .form-control-3 {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  #footer {
+    text-align: center;
+    padding: 0 10px;
+    height: 100px;
+  }
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -1563,6 +1802,7 @@ section {
   align-items: center !important;
   justify-content: center !important;
   display: flex !important;
+  z-index: 100;
 }
 .back-to-top:hover {
   background: #0db8d6;
