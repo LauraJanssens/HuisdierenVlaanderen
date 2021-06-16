@@ -35,9 +35,13 @@ ul {
   background-attachment: fixed;
   position: relative;
 }
-#hero .hero-container {
+
+.hero-container {
   position: absolute;
   padding: 20px;
+}
+.hero-container img {
+  width: 100%;
 }
 
 #hero-dogs {
@@ -47,10 +51,6 @@ ul {
   background-attachment: fixed;
   position: relative;
 }
-#hero-dogs .hero-container {
-  position: absolute;
-  padding: 20px;
-}
 
 #hero-cats {
   height: 60vh;
@@ -58,10 +58,6 @@ ul {
   background-size: 50%;
   background-attachment: fixed;
   position: relative;
-}
-#hero-cats .hero-container {
-  position: absolute;
-  padding: 20px;
 }
 
 #hero-rodents {
@@ -71,10 +67,6 @@ ul {
   background-attachment: fixed;
   position: relative;
 }
-#hero-rodents .hero-container {
-  position: absolute;
-  padding: 20px;
-}
 
 #hero-birds {
   height: 60vh;
@@ -82,10 +74,6 @@ ul {
   background-size: 50%;
   background-attachment: fixed;
   position: relative;
-}
-#hero-birds .hero-container {
-  position: absolute;
-  padding: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -198,76 +186,6 @@ nav {
   color: #C2EFF8;
 }
 
-@media screen and (max-width: 768px) {
-  .topnav a, .dropdown .dropbtn {
-    display: none;
-  }
-
-  .topnav a {
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-  }
-
-  .topnav a:hover {
-    color: #C2EFF8;
-    background-color: #48494A;
-    border-top: 10px solid #48494A;
-  }
-
-  .dropdown .dropbtn {
-    background-color: #3A3B3C;
-    border-top: 10px solid #3A3B3C;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-  }
-
-  .dropdown .dropbtn:hover {
-    color: #C2EFF8;
-    background-color: #48494A;
-    border-top: 10px solid transparent;
-  }
-
-  .topnav a.icon {
-    float: right;
-    display: block;
-    padding: 50px;
-  }
-
-  .dropdown {
-    display: block;
-  }
-}
-@media screen and (max-width: 768px) {
-  .topnav.responsive {
-    position: relative;
-  }
-
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
-  .topnav.responsive .dropdown {
-    float: none;
-  }
-
-  .topnav.responsive .dropdown-content {
-    position: relative;
-  }
-
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -1301,6 +1219,289 @@ section {
   padding: 29px 0;
 }
 
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+  /* Hero */
+  .hero-container img {
+    width: 50%;
+  }
+
+  #hero {
+    background: url("../img/hero-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+
+  #hero-dogs {
+    background: url("../img/dogs-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+
+  #hero-cats {
+    background: url("../img/cats-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+
+  #hero-rodents {
+    background: url("../img/rodents-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+
+  #hero-birds {
+    background: url("../img/birds-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+
+  /* End Hero */
+  /* Section */
+  section {
+    padding: 40px 10px;
+  }
+
+  .section-title h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  .title-line {
+    width: 40px;
+    height: 2px;
+    margin-bottom: 20px;
+  }
+
+  .section-title p {
+    font-size: 12px;
+  }
+
+  .section-title p input {
+    margin-left: 28px;
+  }
+
+  .section-title ul {
+    display: block;
+  }
+
+  /* End Section */
+  .pets .row {
+    display: block;
+    padding: 0 20px;
+  }
+  .pets .row .animal {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .pets .row .animal-content .animal-info h4 {
+    font-size: 18px;
+    margin-top: -60px;
+  }
+
+  .cta {
+    background: url(../img/mobile-bg.jpg);
+    background-size: 80%;
+    padding: 0;
+  }
+  .cta .cta-content h3 {
+    font-size: 20px;
+  }
+  .cta .cta-content p {
+    font-size: 14px;
+  }
+
+  .adopteer .row {
+    display: block;
+    padding: 0 20px;
+  }
+  .adopteer .row .animal {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .adopteer .second-row {
+    display: block;
+    padding: 0 20px;
+  }
+  .adopteer .second-row h5 {
+    font-size: 16px;
+  }
+  .adopteer .second-row .animal {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .adopteer .third-row {
+    padding: 0 20px;
+  }
+  .adopteer .third-row .website-link h5 {
+    font-size: 16px;
+  }
+
+  .rassen .row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .services .row {
+    padding: 0 20px;
+  }
+
+  .services .icon-box {
+    padding: 30px 60px;
+    padding-right: 30px;
+    height: 140px;
+  }
+  .services .icon-box .title {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .services .icon-box .description {
+    font-size: 13px;
+  }
+
+  .blog .row {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .blog .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .blog .column .blog-item .blog-info {
+    height: 70px;
+  }
+  .blog .column .blog-item .blog-info .details-link {
+    top: 60px;
+  }
+
+  .about .row {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .about .column {
+    width: 100%;
+  }
+
+  .about .our-values .row {
+    display: block;
+  }
+
+  .about .our-values .card {
+    width: 85%;
+  }
+
+  .contact .contact-form {
+    width: 72%;
+    padding: 0 20px;
+  }
+  .contact .contact-form .row {
+    display: block;
+  }
+  .contact .contact-form .form-control-1 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contact .contact-form .form-control-2 {
+    width: 100%;
+  }
+  .contact .contact-form .form-control-3 {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  #footer {
+    text-align: center;
+    padding: 0 10px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .topnav a, .dropdown .dropbtn {
+    display: none;
+  }
+
+  .topnav a {
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+  }
+
+  .topnav a:hover {
+    color: #C2EFF8;
+    background-color: #48494A;
+    border-top: 10px solid #48494A;
+  }
+
+  .topnav .active {
+    color: #C2EFF8;
+    background-color: #48494A;
+    border-top: 10px solid #48494A;
+  }
+
+  .dropdown .dropbtn {
+    background-color: #3A3B3C;
+    border-top: 10px solid #3A3B3C;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+  }
+
+  .dropdown .dropbtn:hover {
+    color: #C2EFF8;
+    background-color: #48494A;
+    border-top: 10px solid transparent;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+    padding: 50px;
+  }
+
+  .dropdown {
+    display: block;
+  }
+
+  .topnav.responsive {
+    position: relative;
+    z-index: 5;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
