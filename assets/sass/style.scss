@@ -106,6 +106,7 @@ ul {
 nav {
   height: 132px;
   background: url(../img/nav-pattern.jpg); 
+  z-index: 999999;
 }
 
 .topnav {
@@ -173,7 +174,7 @@ nav {
   min-width: 205px;
   width: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 50;
+  z-index: 999999;
 }
 
 .dropdown-content a {
@@ -1089,7 +1090,7 @@ section {
 
     .animal-content {
       position: relative;
-      z-index: 100;
+      // z-index: 100;
       background: $dark-grey-color;
       
       .animal-img {
@@ -1401,255 +1402,6 @@ section {
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
-@media screen and (max-width: 480px) {
-  /* Hero */
-  .hero-container {
-    img {
-      width: 20%;
-    }
-  }
-  #hero {
-    background: url("../img/hero-bg.jpg") center bottom no-repeat;
-    height: 45vh;
-    background-size: 90%;
-    margin-bottom: 10px;
-  } 
-  #hero-dogs {
-    background: url("../img/dogs-bg.jpg") center bottom no-repeat;
-    height: 45vh;
-    background-size: 90%;
-    margin-bottom: 10px;
-  }
-  #hero-cats {
-    background: url("../img/cats-bg.jpg") center bottom no-repeat;
-    height: 45vh;
-    background-size: 90%;
-    margin-bottom: 10px;
-  }
-  #hero-rodents {
-    background: url("../img/rodents-bg.jpg") center bottom no-repeat;
-    height: 45vh;
-    background-size: 90%;
-    margin-bottom: 10px;
-  }
-  #hero-birds {
-    background: url("../img/birds-bg.jpg") center bottom no-repeat;
-    height: 45vh;
-    background-size: 90%;
-    margin-bottom: 10px;
-  }
-  /* End Hero */
-
-  /* Section */
-  section {
-    padding: 40px 10px;
-  }
-  .section-title h2 {
-    font-size: 20px;
-    padding-bottom: 10px;
-  }
-  .title-line {
-    width: 40px;
-    height: 2px;
-    margin-bottom: 20px;
-  }
-    .section-title p {
-      font-size: 12px;
-  }
-  .section-title p input {
-    margin-left: 28px;
-  }
-  .section-title ul {
-    display: block;
-  }
-  /* End Section */
-
-  .pets .row {
-    display: block;
-    padding: 0 20px;
-
-    .animal {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-
-    .animal-content .animal-info h4 {
-      font-size: 18px;
-    }
-  }
-
-  .cta {
-    background: url(../img/mobile-bg.jpg);
-    background-size: 80%;
-    padding: 0;
-
-    .cta-content {
-      h3 {
-        font-size: 20px;
-      }
-
-      p {
-        font-size: 14px;
-      }
-    }
-  }
-
-  .adopteer .row {
-    display: block;
-    padding: 0 20px;
-
-    .animal {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  }
-  .adopteer .second-row {
-    display: block;
-    padding: 0 20px;
-
-    h5 {
-      font-size: 16px;
-    }
-
-    .animal {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  }
-  .adopteer .third-row {
-    padding: 0 20px;
-
-    .website-link h5 {
-      font-size: 16px;
-    }
-  }
-
-  .rassen .row {
-    display: block;
-    justify-content: center;
-    padding: 0 30px;
-  }
-  .rassen .overlay {
-    .column-1 {
-      float: none;
-      width: 150%;
-      text-align: center;
-
-      p {
-        font-size: 12px;
-      }
-    }
-    .column-2 {
-      float: none;
-      width: 150%;
-    }
-
-    h3 {
-      font-size: 18px;
-      margin: auto;
-      width: 100%;
-      margin-bottom: 15px;
-    }
-
-    ul {
-      margin: auto;
-      width: 100%;
-      li {
-        font-size: 14px;
-      }
-    }
-  }
-
-  .services .row {
-    padding: 0 20px;
-  }
-  .services .icon-box {
-    padding: 30px 60px;
-    padding-right: 30px;
-    height: 140px;
-
-    .title {
-      margin-bottom: 10px;
-      font-size: 16px;
-    }
-
-    .description {
-      font-size: 13px;
-    }
-  }
-  .services .overlay .icon-box .row {
-    display: block;
-    margin: 20px -50px 0;
-
-    .circle-box {
-      height: 200px;
-      width: 200px;
-
-      img {
-        width: 200px;
-        height: 200px;
-      }
-    }
-  }
-
-  .blog .row {
-    display: block;
-    padding: 0 20px;
-  }
-  .blog .column {
-    flex: 100%;
-    max-width: 100%;
-
-    .blog-item .blog-info {
-      height: 70px;
-      
-      .details-link {
-        top: 60px;
-      }
-    }
-  }
-
-  .about .row {
-    display: block;
-    padding: 0 20px;
-  }
-  .about .column {
-    width: 100%;
-  }
-  .about .our-values .row {
-    display: block;
-  }
-  .about .our-values .card {
-    width: 85%;
-  }
-
-  .contact .contact-form {
-    width: 72%;
-    padding: 0 20px;
-
-    .row {
-      display: block;
-    }
-
-    .form-control-1 {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-    .form-control-2 {
-      width: 100%;
-    }
-    .form-control-3 {
-      max-width: 100%;
-      min-width: 100%;
-    }
-}
-  #footer {
-    text-align: center;
-    padding: 0 10px;
-    height: 100px;
-  }
-}
-
 @media screen and (max-width: 830px) {
   .topnav a, .dropdown .dropbtn {
       display: none;
@@ -1886,6 +1638,338 @@ section {
   .contact .contact-form {
     width: 82%;
     padding: 0 60px;
+
+    .row {
+      display: block;
+    }
+
+    .form-control-1 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .form-control-2 {
+      width: 100%;
+    }
+    .form-control-3 {
+      max-width: 100%;
+      min-width: 100%;
+    }
+}
+  #footer {
+    text-align: center;
+    padding: 0 10px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Hero */
+  .hero-container {
+    img {
+      width: 20%;
+    }
+  }
+  #hero {
+    background: url("../img/hero-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  } 
+  #hero-dogs {
+    background: url("../img/dogs-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+  #hero-cats {
+    background: url("../img/cats-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+  #hero-rodents {
+    background: url("../img/rodents-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+  #hero-birds {
+    background: url("../img/birds-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+  /* End Hero */
+
+  /* Section */
+  section {
+    padding: 40px 10px;
+  }
+  .section-title h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .title-line {
+    width: 40px;
+    height: 2px;
+    margin-bottom: 20px;
+  }
+    .section-title p {
+      font-size: 12px;
+  }
+  .section-title p input {
+    margin-left: 28px;
+  }
+  .section-title ul {
+    display: block;
+  }
+  /* End Section */
+
+  .pets .row {
+    display: block;
+    padding: 0 20px;
+
+    .animal {
+      width: 100%;
+      margin-bottom: 20px;
+
+      .animal-content {
+        #slideshow {
+          height: 250px;
+        }
+        #slideshow2 {
+          height: 250px;
+        }
+        #slideshow3 {
+          height: 250px;
+        }
+        #slideshow4 {
+          height: 250px;
+        }
+
+        .animal-info h4 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .cta {
+    background: url(../img/mobile-bg.jpg);
+    background-size: 80%;
+    padding: 0;
+
+    .cta-content {
+      padding: 40px 0;
+      h3 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .adopteer .row {
+    display: block;
+    padding: 0 20px;
+
+    .animal {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  .adopteer .second-row {
+    display: block;
+    padding: 0 20px;
+
+    h5 {
+      font-size: 16px;
+    }
+
+    .animal {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  .adopteer .third-row {
+    padding: 0 20px;
+
+    .website-link h5 {
+      font-size: 16px;
+    }
+  }
+
+  .rassen .row {
+    padding: 0 40px;
+  }
+  .rassen .overlay {
+    width: 70%;
+    .column-2 {
+      width: 50%;
+      margin-left: 50px;
+    }
+  }
+
+  .rassen .row {
+    display: block;
+    justify-content: center;
+    padding: 0 30px;
+  }
+  .rassen .overlay {
+    .column-1 {
+      float: none;
+      width: 150%;
+      text-align: center;
+
+      p {
+        font-size: 12px;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+    }
+    .column-2 {
+      width: 150%;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin: auto;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin: auto;
+      width: 100%;
+      li {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .services .row {
+    padding: 0 20px;
+  }
+  .services .icon-box {
+    padding: 30px 60px;
+    padding-right: 30px;
+    height: 140px;
+
+    .title {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .description {
+      font-size: 13px;
+    }
+  }
+  .services .overlay .icon-box .row {
+    display: block;
+    margin: 20px -50px 0;
+
+    .circle-box {
+      height: 200px;
+      width: 200px;
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+
+  .blog .column {
+    flex: 100%;
+    max-width: 100%;
+
+    .blog-item {
+      margin-bottom: 60px;
+
+      .blog-img {
+        height: 460px;
+      }
+
+      .blog-info {
+        height: 100px;
+
+        h4 {
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 20px;
+        }
+        .details-link {
+          font-size: 22px;
+          top: 60px;
+        }
+      }   
+    }   
+  }
+
+  .blog .row {
+    display: block;
+    padding: 0 20px;
+  }
+  .blog .column {
+    flex: 100%;
+    max-width: 100%;
+
+    .blog-item {
+      .blog-info {
+        height: 70px;
+
+        h4 {
+          font-size: 16px;
+          margin-bottom: 2px;
+        }
+        p {
+          font-size: 12px;
+        }
+        .details-link {
+          font-size: 14px;
+          top: 60px;
+        }
+      }
+      .details-link {
+        top: 60px;
+      }
+      .blog-img {
+        height: auto;
+      }
+    }
+  }
+
+  .doneer .row {
+    display: block;
+    padding: 0 20px;
+  }
+  .doneer .doel {
+    width: 100%;
+}
+
+  .about .row {
+    display: block;
+    padding: 0 20px;
+  }
+  .about .column {
+    width: 100%;
+  }
+  .about .our-values .row {
+    display: block;
+  }
+  .about .our-values .card {
+    width: 85%;
+  }
+
+  .contact .contact-form {
+    width: 72%;
+    padding: 0 20px;
 
     .row {
       display: block;

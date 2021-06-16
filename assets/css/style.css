@@ -82,6 +82,7 @@ ul {
 nav {
   height: 132px;
   background: url(../img/nav-pattern.jpg);
+  z-index: 999999;
 }
 
 .topnav {
@@ -151,7 +152,7 @@ nav {
   min-width: 205px;
   width: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 50;
+  z-index: 999999;
 }
 
 .dropdown-content a {
@@ -961,7 +962,6 @@ section {
 }
 .doneer .doel .animal-content {
   position: relative;
-  z-index: 100;
   background: #3A3B3C;
 }
 .doneer .doel .animal-content .animal-img {
@@ -1227,249 +1227,6 @@ section {
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
-@media screen and (max-width: 480px) {
-  /* Hero */
-  .hero-container img {
-    width: 20%;
-  }
-
-  #hero {
-    background: url("../img/hero-bg.jpg") center bottom no-repeat;
-    height: 45vh;
-    background-size: 90%;
-    margin-bottom: 10px;
-  }
-
-  #hero-dogs {
-    background: url("../img/dogs-bg.jpg") center bottom no-repeat;
-    height: 45vh;
-    background-size: 90%;
-    margin-bottom: 10px;
-  }
-
-  #hero-cats {
-    background: url("../img/cats-bg.jpg") center bottom no-repeat;
-    height: 45vh;
-    background-size: 90%;
-    margin-bottom: 10px;
-  }
-
-  #hero-rodents {
-    background: url("../img/rodents-bg.jpg") center bottom no-repeat;
-    height: 45vh;
-    background-size: 90%;
-    margin-bottom: 10px;
-  }
-
-  #hero-birds {
-    background: url("../img/birds-bg.jpg") center bottom no-repeat;
-    height: 45vh;
-    background-size: 90%;
-    margin-bottom: 10px;
-  }
-
-  /* End Hero */
-  /* Section */
-  section {
-    padding: 40px 10px;
-  }
-
-  .section-title h2 {
-    font-size: 20px;
-    padding-bottom: 10px;
-  }
-
-  .title-line {
-    width: 40px;
-    height: 2px;
-    margin-bottom: 20px;
-  }
-
-  .section-title p {
-    font-size: 12px;
-  }
-
-  .section-title p input {
-    margin-left: 28px;
-  }
-
-  .section-title ul {
-    display: block;
-  }
-
-  /* End Section */
-  .pets .row {
-    display: block;
-    padding: 0 20px;
-  }
-  .pets .row .animal {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .pets .row .animal-content .animal-info h4 {
-    font-size: 18px;
-  }
-
-  .cta {
-    background: url(../img/mobile-bg.jpg);
-    background-size: 80%;
-    padding: 0;
-  }
-  .cta .cta-content h3 {
-    font-size: 20px;
-  }
-  .cta .cta-content p {
-    font-size: 14px;
-  }
-
-  .adopteer .row {
-    display: block;
-    padding: 0 20px;
-  }
-  .adopteer .row .animal {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .adopteer .second-row {
-    display: block;
-    padding: 0 20px;
-  }
-  .adopteer .second-row h5 {
-    font-size: 16px;
-  }
-  .adopteer .second-row .animal {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .adopteer .third-row {
-    padding: 0 20px;
-  }
-  .adopteer .third-row .website-link h5 {
-    font-size: 16px;
-  }
-
-  .rassen .row {
-    display: block;
-    justify-content: center;
-    padding: 0 30px;
-  }
-
-  .rassen .overlay .column-1 {
-    float: none;
-    width: 150%;
-    text-align: center;
-  }
-  .rassen .overlay .column-1 p {
-    font-size: 12px;
-  }
-  .rassen .overlay .column-2 {
-    float: none;
-    width: 150%;
-  }
-  .rassen .overlay h3 {
-    font-size: 18px;
-    margin: auto;
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  .rassen .overlay ul {
-    margin: auto;
-    width: 100%;
-  }
-  .rassen .overlay ul li {
-    font-size: 14px;
-  }
-
-  .services .row {
-    padding: 0 20px;
-  }
-
-  .services .icon-box {
-    padding: 30px 60px;
-    padding-right: 30px;
-    height: 140px;
-  }
-  .services .icon-box .title {
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-  .services .icon-box .description {
-    font-size: 13px;
-  }
-
-  .services .overlay .icon-box .row {
-    display: block;
-    margin: 20px -50px 0;
-  }
-  .services .overlay .icon-box .row .circle-box {
-    height: 200px;
-    width: 200px;
-  }
-  .services .overlay .icon-box .row .circle-box img {
-    width: 200px;
-    height: 200px;
-  }
-
-  .blog .row {
-    display: block;
-    padding: 0 20px;
-  }
-
-  .blog .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-  .blog .column .blog-item .blog-info {
-    height: 70px;
-  }
-  .blog .column .blog-item .blog-info .details-link {
-    top: 60px;
-  }
-
-  .about .row {
-    display: block;
-    padding: 0 20px;
-  }
-
-  .about .column {
-    width: 100%;
-  }
-
-  .about .our-values .row {
-    display: block;
-  }
-
-  .about .our-values .card {
-    width: 85%;
-  }
-
-  .contact .contact-form {
-    width: 72%;
-    padding: 0 20px;
-  }
-  .contact .contact-form .row {
-    display: block;
-  }
-  .contact .contact-form .form-control-1 {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .contact .contact-form .form-control-2 {
-    width: 100%;
-  }
-  .contact .contact-form .form-control-3 {
-    max-width: 100%;
-    min-width: 100%;
-  }
-
-  #footer {
-    text-align: center;
-    padding: 0 10px;
-    height: 100px;
-  }
-}
 @media screen and (max-width: 830px) {
   .topnav a, .dropdown .dropbtn {
     display: none;
@@ -1719,6 +1476,327 @@ section {
   .contact .contact-form {
     width: 82%;
     padding: 0 60px;
+  }
+  .contact .contact-form .row {
+    display: block;
+  }
+  .contact .contact-form .form-control-1 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contact .contact-form .form-control-2 {
+    width: 100%;
+  }
+  .contact .contact-form .form-control-3 {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  #footer {
+    text-align: center;
+    padding: 0 10px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* Hero */
+  .hero-container img {
+    width: 20%;
+  }
+
+  #hero {
+    background: url("../img/hero-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+
+  #hero-dogs {
+    background: url("../img/dogs-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+
+  #hero-cats {
+    background: url("../img/cats-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+
+  #hero-rodents {
+    background: url("../img/rodents-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+
+  #hero-birds {
+    background: url("../img/birds-bg.jpg") center bottom no-repeat;
+    height: 45vh;
+    background-size: 90%;
+    margin-bottom: 10px;
+  }
+
+  /* End Hero */
+  /* Section */
+  section {
+    padding: 40px 10px;
+  }
+
+  .section-title h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  .title-line {
+    width: 40px;
+    height: 2px;
+    margin-bottom: 20px;
+  }
+
+  .section-title p {
+    font-size: 12px;
+  }
+
+  .section-title p input {
+    margin-left: 28px;
+  }
+
+  .section-title ul {
+    display: block;
+  }
+
+  /* End Section */
+  .pets .row {
+    display: block;
+    padding: 0 20px;
+  }
+  .pets .row .animal {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .pets .row .animal .animal-content #slideshow {
+    height: 250px;
+  }
+  .pets .row .animal .animal-content #slideshow2 {
+    height: 250px;
+  }
+  .pets .row .animal .animal-content #slideshow3 {
+    height: 250px;
+  }
+  .pets .row .animal .animal-content #slideshow4 {
+    height: 250px;
+  }
+  .pets .row .animal .animal-content .animal-info h4 {
+    font-size: 18px;
+  }
+
+  .cta {
+    background: url(../img/mobile-bg.jpg);
+    background-size: 80%;
+    padding: 0;
+  }
+  .cta .cta-content {
+    padding: 40px 0;
+  }
+  .cta .cta-content h3 {
+    font-size: 20px;
+  }
+  .cta .cta-content p {
+    font-size: 14px;
+  }
+
+  .adopteer .row {
+    display: block;
+    padding: 0 20px;
+  }
+  .adopteer .row .animal {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .adopteer .second-row {
+    display: block;
+    padding: 0 20px;
+  }
+  .adopteer .second-row h5 {
+    font-size: 16px;
+  }
+  .adopteer .second-row .animal {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .adopteer .third-row {
+    padding: 0 20px;
+  }
+  .adopteer .third-row .website-link h5 {
+    font-size: 16px;
+  }
+
+  .rassen .row {
+    padding: 0 40px;
+  }
+
+  .rassen .overlay {
+    width: 70%;
+  }
+  .rassen .overlay .column-2 {
+    width: 50%;
+    margin-left: 50px;
+  }
+
+  .rassen .row {
+    display: block;
+    justify-content: center;
+    padding: 0 30px;
+  }
+
+  .rassen .overlay .column-1 {
+    float: none;
+    width: 150%;
+    text-align: center;
+  }
+  .rassen .overlay .column-1 p {
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .rassen .overlay .column-2 {
+    width: 150%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .rassen .overlay h3 {
+    font-size: 18px;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .rassen .overlay ul {
+    margin: auto;
+    width: 100%;
+  }
+  .rassen .overlay ul li {
+    font-size: 14px;
+  }
+
+  .services .row {
+    padding: 0 20px;
+  }
+
+  .services .icon-box {
+    padding: 30px 60px;
+    padding-right: 30px;
+    height: 140px;
+  }
+  .services .icon-box .title {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .services .icon-box .description {
+    font-size: 13px;
+  }
+
+  .services .overlay .icon-box .row {
+    display: block;
+    margin: 20px -50px 0;
+  }
+  .services .overlay .icon-box .row .circle-box {
+    height: 200px;
+    width: 200px;
+  }
+  .services .overlay .icon-box .row .circle-box img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .blog .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .blog .column .blog-item {
+    margin-bottom: 60px;
+  }
+  .blog .column .blog-item .blog-img {
+    height: 460px;
+  }
+  .blog .column .blog-item .blog-info {
+    height: 100px;
+  }
+  .blog .column .blog-item .blog-info h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .blog .column .blog-item .blog-info p {
+    font-size: 20px;
+  }
+  .blog .column .blog-item .blog-info .details-link {
+    font-size: 22px;
+    top: 60px;
+  }
+
+  .blog .row {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .blog .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .blog .column .blog-item .blog-info {
+    height: 70px;
+  }
+  .blog .column .blog-item .blog-info h4 {
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+  .blog .column .blog-item .blog-info p {
+    font-size: 12px;
+  }
+  .blog .column .blog-item .blog-info .details-link {
+    font-size: 14px;
+    top: 60px;
+  }
+  .blog .column .blog-item .details-link {
+    top: 60px;
+  }
+  .blog .column .blog-item .blog-img {
+    height: auto;
+  }
+
+  .doneer .row {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .doneer .doel {
+    width: 100%;
+  }
+
+  .about .row {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .about .column {
+    width: 100%;
+  }
+
+  .about .our-values .row {
+    display: block;
+  }
+
+  .about .our-values .card {
+    width: 85%;
+  }
+
+  .contact .contact-form {
+    width: 72%;
+    padding: 0 20px;
   }
   .contact .contact-form .row {
     display: block;
